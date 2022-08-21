@@ -81,7 +81,7 @@ function CartScreen() {
                 </div>
                 <div className='col-span-1 flex justify-around items-center '>
                   <select
-                    className=' button'
+                    className=' button tex-xs md:text-md'
                     value={item.quantity}
                     onChange={(e) => updateCartHandler(item, e.target.value)}
                   >

@@ -5,7 +5,7 @@
 Build ECommerce Website Like Amazon by Next.js
 
 - Source Code    :  https://github.com/hicmtrex/amazon-clone
-- Demo Website :  https://nextjs-amazona-final.vercel.app
+- Demo Website :  https://amazon-clone-nine-umber.vercel.app
 
 ## Run it Locally
 

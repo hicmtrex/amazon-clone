@@ -21,7 +21,7 @@ const handler = async (req, res) => {
 };
 const getHandler = async (req, res) => {
   await db.connect();
-  const product = await Product.findById(req.query.id);
+  const product = await Product.findById(req.query.id).lean();
   await db.disconnect();
   res.send(product);
 };

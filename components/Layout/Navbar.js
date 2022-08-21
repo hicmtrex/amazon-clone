@@ -191,7 +191,7 @@ function Navbar() {
                   </Menu>
                 ) : (
                   <Link href='/login' passHref>
-                    <a className='hidden md:inline  md:text-sm mt-2 text-white hover:bg-amber-300 font-bold duration-200  px-3 py-2 rounded-md '>
+                    <a className=' md:text-sm mt-2 text-white hover:bg-amber-300 font-bold duration-200  px-3 py-2 rounded-md '>
                       Login
                     </a>
                   </Link>
@@ -199,7 +199,7 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <div className='flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm'>
+          <div className=' items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm hidden md:flex'>
             <p className='link flex items-center'>
               <MenuIcon className='h-6 mr-1' />
               All

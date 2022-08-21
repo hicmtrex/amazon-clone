@@ -3,6 +3,8 @@ import { useContext } from 'react';
 import { toast } from 'react-toastify';
 import Layout from '../components/Layout';
 import ProductItem from '../components/ProductItem';
+import Product from '../models/Product';
+import db from '../utils/db';
 
 import { Store } from '../utils/Store';
 
@@ -38,23 +40,23 @@ export default function Home({ products }) {
   );
 }
 
-export async function getStaticProps() {
-  const { data } = await axios.get('http://localhost:3000/api/products');
+// export async function getStaticProps() {
+//   const { data } = await axios.get('http://localhost:3000/api/products');
 
-  return {
-    props: {
-      products: data,
-    },
-    revalidate: 600,
-  };
-}
-
-// export async function getServerSideProps() {
-//   await db.connect();
-//   const products = await Product.find().lean();
 //   return {
 //     props: {
-//       products: products.map(db.convertDocToObj),
+//       products: data,
 //     },
+//     revalidate: 600,
 //   };
 // }
+
+export async function getServerSideProps() {
+  await db.connect();
+  const products = await Product.find().lean();
+  return {
+    props: {
+      products: products.map(db.convertDocToObj),
+    },
+  };
+}

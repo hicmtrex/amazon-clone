@@ -2,7 +2,7 @@ repo_name: hicmtrex/amazon-clone
 report_id: 1245e1837f44fe59f2a20f26d4fd5e2f
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:17:53+00:00'
+timestamp: '2024-02-29T19:09:35+00:00'
 requested_by: invalid-email-address
 provider: github
 branch: main
@@ -55,7 +55,7 @@ tools:
   last_updated_by: Firstname Lastname
   last_updated_on: 2022-08-21 13:41:34.000000000 Z
 - name: Next.js
-  description: 'A small framework for server-rendered universal JavaScript apps '
+  description: A small framework for server-rendered universal JavaScript apps
   website_url: https://nextjs.org/
   version: 12.1.5
   open_source: true
